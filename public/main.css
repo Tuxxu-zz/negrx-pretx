@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'Goshasans';
+    src: url('/assets/GoshaSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+    font-family: Goshasans,sans-serif;;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: #7774bd;
+}
+h1{
+    font-size: 20vw;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 80%;
+    color: #7774bd;
+    margin: auto;
+}
+p{
+    line-height: 32px;
+}
+a{
+    color: #f0c47a;
+    text-decoration: none;
+    margin: 0;
+}
+header a:hover, .intro a:hover, footer a:hover{
+    text-decoration: underline;
+}
+header a{
+    margin: 48px;
+}
+header a:first-child {
+    color: #7774bd;
+}
+header{
+    border-top: solid 8px #7774bd;
+    display: flex; 
+    justify-content: space-between;
+}
+.intro{
+    margin: 200px 48px 0 32px;
+}
+.intro p{
+    width: 56%;
+    margin: 64px 16px;
+}
+#list{
+    margin: 112px 48px;
+}
+#list ul li {
+    display: flex;
+    justify-content: start; 
+}
+#list ul li p{
+    margin: 0 8px;
+    color: #7774bd;
+}
+#list ul li{
+    list-style: none;
+    border-top: solid 1px #7774bd;
+    padding: 16px 0 40px 0;
+}
+#list ul li:hover{
+    background-color: #2d2c39;
+}
+.name{
+    width: 33%;
+}
+.role{
+    width: 33%;
+}
+.nick{
+    width: 33%;
+}
+footer{
+    display: flex; 
+    justify-content: space-between;
+    background-color: #c5bea9;
+    padding: 80px 48px;
+}
+footer p{
+    color: #333333;
+    margin: 0;
+}
+footer a{
+    color: #7774bd;
+}
+.column-left{
+    margin: 0;
+}
+.column-left a{
+    font-size: 24px;
+}
+.column-right{
+    width: 528px;
+    margin: 0;
+}
+@media screen and (max-width: 768px){
+    body{
+        background-color: #f0c47a;
+        color: #000;
+        font-size: 16px;
+        line-height: 16px;
+        border: solid 1px #000;
+        overflow-x: hidden;
+    }
+    a {
+        color: #7774bd;
+    }
+    h1{
+        font-size: 26vw;
+        color: #000;
+    }
+    p{
+        color: #000;
+        line-height: 24px;
+    }
+    .intro {
+        margin: 80px 0 0 24px;
+    }
+    .intro p{
+        width: 96%;
+        margin: 24px 0px;
+    }
+    #list{
+        margin: 112px 24px;
+    }
+    .role{
+        display: none;
+    }
+    .name, .nick{
+        width: 50%;
+        word-break: break-word;
+    }
+    .nick{
+        text-align: end;
+    }
+    #list ul li p{
+        color: #000;
+    }
+    #list ul li{
+        border-top: solid 1px #000;
+    }
+
+    footer{
+        flex-direction: column;
+        background-color: #000;
+        padding: 80px 24px;
+    }
+    footer p{
+        color: #c5bea9;
+    }
+    .column-right{
+        width: 96%;
+        margin: 32px 0;
+    }
+    header a:first-child {
+        color: #000;
+    }
+    header a {
+        color: #7774bd;
+        margin: 16px;
+    }
+    header {
+        border-top: solid 8px #000;
+    }
+
+
+}

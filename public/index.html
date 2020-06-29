@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Negrx Pretx</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-TileColor" content="#7774bd">
+    <meta name="theme-color" content="#7774bd">
+    <meta name="description" content="Diretório de contato a criativos Negrxs Brasileirxs.">
+
+    <meta itemprop="name" content="Negro Preto">
+    <meta itemprop="description" content="Diretório de contato a criativos Negrxs Brasileirxs.">
+    <meta itemprop="image" content="http://uploads-ssl.webflow.com/5eee9485930288cb2ea18da5/5eefb0690aad8970afe0c58a_Open%20Graph.jpg">
+
+    <meta property="og:url" content="https://negro-preto.webflow.io">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Negro Preto">
+    <meta property="og:description" content="Diretório de contato a criativos Negrxs Brasileirxs.">
+    <meta property="og:image" content="http://uploads-ssl.webflow.com/5eee9485930288cb2ea18da5/5eefb0690aad8970afe0c58a_Open%20Graph.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Negro Preto">
+    <meta name="twitter:description" content="Diretório de contato a criativos Negrxs Brasileirxs.">
+    <meta name="twitter:image" content="http://uploads-ssl.webflow.com/5eee9485930288cb2ea18da5/5eefb0690aad8970afe0c58a_Open%20Graph.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7774bd">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-170178595-1');
+    </script>
+    <script id="people" type="text/x-handlebars-template">
+        <ul>
+            {{#each this}}
+            <a href="{{Url}}" target="_blank">
+            <li>
+                    <div class="name"><p>{{Name}}</p></div>
+                    <div class="role"><p>{{Role}}</p></div>
+                    <div class="nick"><p>{{Username}}</p></div>                    
+                </li>
+            </a>
+            {{/each}}
+        </ul>
+      </script>
+    <header>
+        <a href="#">negropreto.com.br</a>
+        <a href="https://forms.gle/f3Jb3sTeqsKSbK8D7" target="_blank">Indique negrxs</a>
+    </header>
+    <section class="intro">
+        <h1>NEGRX<br>PRETX</h1>
+        <p>Este espaço propõe ser um diretório para compartilhar e facilitar o acesso a criativos, criadores de conteúdo e movimentos feitos por negrxs pretxs e indígenas Brasileiros. Quer estar nesta lista ou indicar? <a href="https://forms.gle/f3Jb3sTeqsKSbK8D7" target="_blank">Clique aqui</a></p>
+    </section>
+    <section id="list">
+    </section>
+    <footer>
+        <div class="column-left">
+            <p>Projeto por<br><a href="https://www.instagram.com/relacerda/">@relacerda</a></p>
+        </div>
+        <div class="column-right">
+            <p>Caso tenha tido seu nome indevidamente adicionado a esse diretório ou queira propor alguma alteração, entre em contato via <a href="mailto:relacerdaa@gmail.com">Email.</a></p> 
+        </div> 
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="main.js"></script>
+</body>
+</html>
